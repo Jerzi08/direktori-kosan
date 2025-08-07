@@ -10,15 +10,16 @@ fetch('data/kosan.json')  // tambahkan folder data di depan
       card.classList.add('card');
 
       card.innerHTML = `
-        <img src="${kosan.gambar}" alt="Foto ${kosan.nama}" />
-        <div class="card-content">
-          <h2>${kosan.nama}</h2>
-          <p><strong>Lokasi:</strong> ${kosan.lokasi}</p>
-          <p><strong>Harga:</strong> ${kosan.harga}</p>
-          <p><strong>Fasilitas:</strong> ${kosan.fasilitas}</p>
-          <a href="${kosan.whatsapp}" target="_blank" class="btn-whatsapp">Hubungi via WhatsApp</a>
-        </div>
-      `;
+  <img src="images/${kosan.gambar}" alt="Foto ${kosan.nama}" />
+  <div class="card-content">
+    <h2>${kosan.nama}</h2>
+    <p><strong>Lokasi:</strong> ${kosan.lokasi}</p>
+    <p><strong>Harga:</strong> ${kosan.harga}</p>
+    <p><strong>Fasilitas:</strong> ${kosan.fasilitas}</p>
+    <a href="${kosan.whatsapp}" target="_blank" class="btn-whatsapp">Hubungi via WhatsApp</a>
+  </div>
+`;
+
 
       container.appendChild(card);
     });
