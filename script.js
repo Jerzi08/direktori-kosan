@@ -10,7 +10,7 @@ fetch('data/kosan.json')  // tambahkan folder data di depan
       card.classList.add('card');
 
       card.innerHTML = `
-        <img src="images/${kosan.gambar}" alt="Foto ${kosan.nama}" />
+        <img src="${kosan.gambar}" alt="Foto ${kosan.nama}" />
         <div class="card-content">
           <h2>${kosan.nama}</h2>
           <p><strong>Lokasi:</strong> ${kosan.lokasi}</p>
