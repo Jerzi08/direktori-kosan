@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nama": "Kosan Mawar Indah",
+    "lokasi": "Jl. Kenanga No. 12, Yogyakarta",
+    "harga": "Rp 850.000 / bulan",
+    "gambar": "images/kos1.jpg",
+    "fasilitas": ["Wifi", "AC", "Kamar Mandi Dalam"],
+    "kontak": "https://wa.me/6281234567890"
+  },
+  {
+    "id": 2,
+    "nama": "Kosan Putra Bahagia",
+    "lokasi": "Jl. Soekarno Hatta No. 45, Malang",
+    "harga": "Rp 600.000 / bulan",
+    "gambar": "images/kos2.jpg",
+    "fasilitas": ["Wifi", "Kipas Angin"],
+    "kontak": "https://wa.me/628111223344"
+  }
+]
