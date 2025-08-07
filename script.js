@@ -1,21 +1,29 @@
-fetch('data/kosan.json')
-  .then(response => response.json())
+fetch('data/kosan.json')  // tambahkan folder data di depan
+  .then(response => {
+    if (!response.ok) throw new Error('Gagal load data kosan');
+    return response.json();
+  })
   .then(data => {
     const container = document.getElementById('kosan-container');
-    data.forEach(kos => {
-      const div = document.createElement('div');
-      div.className = 'card';
-      div.innerHTML = `
-        <img src="${kos.gambar}" alt="${kos.nama}">
-        <h2>${kos.nama}</h2>
-        <p><strong>Lokasi:</strong> ${kos.lokasi}</p>
-        <p><strong>Harga:</strong> ${kos.harga}</p>
-        <p><strong>Fasilitas:</strong> ${kos.fasilitas.join(', ')}</p>
-        <a href="${kos.kontak}" target="_blank">Hubungi via WhatsApp</a>
+    data.forEach(kosan => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      card.innerHTML = `
+        <img src="images/${kosan.gambar}" alt="Foto ${kosan.nama}" />
+        <div class="card-content">
+          <h2>${kosan.nama}</h2>
+          <p><strong>Lokasi:</strong> ${kosan.lokasi}</p>
+          <p><strong>Harga:</strong> ${kosan.harga}</p>
+          <p><strong>Fasilitas:</strong> ${kosan.fasilitas}</p>
+          <a href="${kosan.whatsapp}" target="_blank" class="btn-whatsapp">Hubungi via WhatsApp</a>
+        </div>
       `;
-      container.appendChild(div);
+
+      container.appendChild(card);
     });
   })
   .catch(error => {
-    console.error('Gagal memuat data kosan:', error);
+    console.error('Error:', error);
+    document.getElementById('kosan-container').innerText = 'Gagal memuat data kosan.';
   });
