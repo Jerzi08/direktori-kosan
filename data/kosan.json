@@ -6,6 +6,10 @@
     "fasilitas": "Wifi, AC, Kamar Mandi Dalam",
     "gambar": "kosan-mawar.jpeg",
     "whatsapp": "https://wa.me/628123456789"
+    "foto_detail": [
+      "mawar1.jpeg",
+      "mawar2.jpeg",
+    ]
   },
   {
     "nama": "Kosan Putra Bahagia",
@@ -14,6 +18,10 @@
     "fasilitas": "Wifi, Kamar Mandi Dalam",
     "gambar": "kosan-putra.jpg",
     "whatsapp": "https://wa.me/628987654321"
+    "foto_detail": [
+      "putra1.jpeg",
+      "putra2.jpeg"
+    ]
   },
   {
     "nama": "Kosan Melati Asri",
