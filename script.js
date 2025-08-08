@@ -9,7 +9,7 @@ fetch('data/kosan.json')  // folder data di depan
       const card = document.createElement('div');
       card.classList.add('card');
 
-      // Buat elemen gambar secara manual supaya bisa diberi event klik
+      // Buat elemen gambar supaya bisa diberi event klik
       const img = document.createElement('img');
       img.src = `images/${kosan.gambar}`;
       img.alt = `Foto ${kosan.nama}`;
@@ -31,13 +31,13 @@ fetch('data/kosan.json')  // folder data di depan
           galeriBody.innerHTML = '<p>Tidak ada foto detail tersedia.</p>';
         }
 
-        galeriModal.style.display = 'block';
+        galeriModal.style.display = 'flex';  // gunakan flex untuk modal tampil
       });
 
       // Tambahkan gambar ke card
       card.appendChild(img);
 
-      // Tambahkan konten kosan setelah gambar
+      // Tambahkan konten kosan setelah gambar, termasuk detail kamar
       const cardContent = document.createElement('div');
       cardContent.classList.add('card-content');
       cardContent.innerHTML = `
@@ -45,6 +45,7 @@ fetch('data/kosan.json')  // folder data di depan
         <p><strong>Lokasi:</strong> ${kosan.lokasi}</p>
         <p><strong>Harga:</strong> ${kosan.harga}</p>
         <p><strong>Fasilitas:</strong> ${kosan.fasilitas}</p>
+        <p><strong>Detail Kamar:</strong> ${kosan.detail}</p>
         <a href="${kosan.whatsapp}" target="_blank" class="btn-whatsapp">Hubungi via WhatsApp</a>
       `;
       card.appendChild(cardContent);
@@ -57,8 +58,7 @@ fetch('data/kosan.json')  // folder data di depan
     document.getElementById('kosan-container').innerText = 'Gagal memuat data kosan.';
   });
 
-// Tambah modal close logic (pastikan script ini juga ada di script.js)
-
+// Tambah modal close logic
 const modalGaleri = document.getElementById('modal-galeri');
 const closeGaleriBtn = document.querySelector('.close-button-galeri');
 
