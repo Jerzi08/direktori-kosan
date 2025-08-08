@@ -26,6 +26,8 @@
     "fasilitas": "Wifi, AC, Parkir",
     "gambar": "kosan-melati.jpeg",
     "whatsapp": "https://wa.me/628112233445"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/melati1.jpeg", "detail/melati2.jpeg"]
   },
   {
     "nama": "Kosan Anggrek",
@@ -34,6 +36,8 @@
     "fasilitas": "Wifi, Kamar Mandi Dalam",
     "gambar": "kosan-anggrek.jpeg",
     "whatsapp": "https://wa.me/628998877665"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/anggrek1.jpeg", "detail/anggrek2.jpeg"]
   },
   {
     "nama": "Kosan Dahlia",
@@ -42,6 +46,8 @@
     "fasilitas": "Wifi, AC, Kamar Mandi Dalam",
     "gambar": "kosan-dahlia.jpeg",
     "whatsapp": "https://wa.me/628556677889"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/dahlia1.jpeg", "detail/dahlia2.jpeg"]
   },
   {
     "nama": "Kosan Kenanga",
@@ -50,6 +56,8 @@
     "fasilitas": "Wifi, AC, Parkir",
     "gambar": "kosan-kenanga.jpeg",
     "whatsapp": "https://wa.me/628223344556"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/kenanga1.jpeg", "detail/kenanga2.jpeg"]
   },
   {
     "nama": "Kosan Teratai",
@@ -58,6 +66,8 @@
     "fasilitas": "Wifi, AC, Kamar Mandi Dalam",
     "gambar": "kosan-teratai.jpeg",
     "whatsapp": "https://wa.me/628667788990"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/teratai1.jpeg", "detail/teratai2.jpeg"]
   },
   {
     "nama": "Kosan Bougenville",
@@ -66,6 +76,8 @@
     "fasilitas": "Wifi, Kamar Mandi Dalam",
     "gambar": "kosan-bougenville.jpeg",
     "whatsapp": "https://wa.me/628778899001"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/bougenville1.jpeg", "detail/bougenville2.jpeg"]
   },
   {
     "nama": "Kosan Angsana",
@@ -74,6 +86,8 @@
     "fasilitas": "Wifi, AC, Parkir",
     "gambar": "kosan-angsana.jpeg",
     "whatsapp": "https://wa.me/628334455667"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/angsana1.jpeg", "detail/angsana2.jpeg"]
   },
   {
     "nama": "Kosan Melur",
@@ -82,5 +96,7 @@
     "fasilitas": "Wifi, Kamar Mandi Dalam",
     "gambar": "kosan-melur.jpeg",
     "whatsapp": "https://wa.me/628445566778"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/melur1.jpeg", "detail/melur2.jpeg"]
   }
 ]
