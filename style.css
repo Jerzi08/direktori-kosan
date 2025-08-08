@@ -12,8 +12,8 @@ body {
 header {
   position: relative; /* Penting untuk overlay */
   background-image: url('images/header.jpg');
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center;
