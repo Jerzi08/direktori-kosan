@@ -169,3 +169,19 @@ footer {
   background-color: #e04444;
 }
 
+.btn-map {
+  display: inline-block;
+  background-color: #4285F4;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-map:hover {
+  background-color: #3367D6;
+}
+

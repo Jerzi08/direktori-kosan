@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = `images/${kosan.gambar}`;
         img.alt = `Foto ${kosan.nama}`;
 
+        // Buka galeri modal saat klik gambar
         img.addEventListener('click', () => {
           const galeriModal = document.getElementById('modal-galeri');
           const galeriBody = document.getElementById('galeri-body');
@@ -45,8 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Detail Kamar:</strong> ${kosan.detail}</p>
           <a href="${kosan.whatsapp}" target="_blank" class="btn-whatsapp">Hubungi via WhatsApp</a>
         `;
-        card.appendChild(cardContent);
 
+        // Tambahkan tombol Google Maps jika koordinat tersedia
+        if (kosan.latitude && kosan.longitude) {
+          const mapLink = document.createElement('a');
+          mapLink.href = `https://www.google.com/maps?q=${kosan.latitude},${kosan.longitude}`;
+          mapLink.target = '_blank';
+          mapLink.rel = 'noopener noreferrer';
+          mapLink.textContent = 'Lihat di Google Maps';
+          mapLink.classList.add('btn-map');
+          cardContent.appendChild(mapLink);
+        }
+
+        card.appendChild(cardContent);
         container.appendChild(card);
       });
     })
@@ -55,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('kosan-container').innerText = 'Gagal memuat data kosan.';
     });
 
-  // Modal close logic
+  // Logika modal galeri
   const modalGaleri = document.getElementById('modal-galeri');
   const closeGaleriBtn = document.querySelector('.close-button-galeri');
 
