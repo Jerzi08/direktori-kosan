@@ -170,7 +170,9 @@ footer {
 }
 
 .btn-map {
-  display: inline-block;
+  display: block;
+  width: 100%; /* Biar ukurannya konsisten seperti tombol WhatsApp */
+  text-align: center; /* Ini yang memposisikan teks ke tengah */
   background-color: #4285F4;
   color: white;
   padding: 8px 12px;
@@ -184,4 +186,5 @@ footer {
 .btn-map:hover {
   background-color: #3367D6;
 }
+
 
