@@ -48,15 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Tambahkan tombol Google Maps jika koordinat tersedia
-        if (kosan.latitude && kosan.longitude) {
-          const mapLink = document.createElement('a');
-          mapLink.href = `https://www.google.com/maps?q=${kosan.latitude},${kosan.longitude}`;
-          mapLink.target = '_blank';
-          mapLink.rel = 'noopener noreferrer';
-          mapLink.textContent = 'Lihat di Google Maps';
-          mapLink.classList.add('btn-map');
-          cardContent.appendChild(mapLink);
-        }
+if (kosan.maps && kosan.maps.lat && kosan.maps.lng) {
+  const mapLink = document.createElement('a');
+  mapLink.href = `https://www.google.com/maps?q=${kosan.maps.lat},${kosan.maps.lng}`;
+  mapLink.target = '_blank';
+  mapLink.rel = 'noopener noreferrer';
+  mapLink.textContent = 'Lihat di Google Maps';
+  mapLink.classList.add('btn-map');
+  cardContent.appendChild(mapLink);
+}
+
 
         card.appendChild(cardContent);
         container.appendChild(card);
