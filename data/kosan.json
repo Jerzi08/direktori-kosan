@@ -6,6 +6,8 @@
     "fasilitas": "Wifi, AC, Kamar Mandi Dalam",
     "gambar": "kosan-mawar.jpeg",
     "whatsapp": "https://wa.me/628123456789"
+    "detail": "Kamar ukuran 3x4m, kasur, AC, dan kamar mandi dalam.",
+    "fotoDetail": ["detail/mawar1.jpeg", "detail/mawar2.jpeg"]
     
   },
   {
@@ -15,6 +17,8 @@
     "fasilitas": "Wifi, Kamar Mandi Dalam",
     "gambar": "kosan-putra.jpg",
     "whatsapp": "https://wa.me/628987654321"
+    "detail": "Kamar nyaman dengan jendela besar, kamar mandi dalam, dan meja kerja."
+    "fotoDetail": ["detail/putra1.jpeg", "detail/putra2.jpeg"]
     
   },
   {

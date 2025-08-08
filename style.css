@@ -81,3 +81,24 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+
+.galeri-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeri-container img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.modal img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
