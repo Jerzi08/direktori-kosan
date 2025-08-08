@@ -10,13 +10,18 @@ body {
 }
 
 header {
+  position: relative; /* Penting untuk overlay */
   background-image: url('images/header.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center;
-  color: white; /* Supaya teks kontras */
+  color: white;
+  min-height: 300px; /* Beri tinggi minimal supaya terlihat */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal center teks */
 }
 
 header::before {
@@ -25,14 +30,16 @@ header::before {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5); /* Warna hitam transparan */
+  background: rgba(0,0,0,0.5);
   z-index: 1;
 }
 
 header h1, header p {
   position: relative;
   z-index: 2;
+  margin: 0;
 }
+
 
 
 .grid-container {
